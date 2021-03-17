@@ -8,4 +8,6 @@ require (
 	github.com/Shopify/sarama v1.28.0
 	github.com/bsm/sarama-cluster v2.1.15+incompatible // indirect
 	github.com/go-echarts/go-echarts/v2 v2.2.3
+	gorm.io/driver/mysql v1.0.5
+	gorm.io/gorm v1.21.3
 )
