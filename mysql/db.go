@@ -51,27 +51,6 @@ func initFive() {
 		fmt.Printf("db != nil\n")
 	}
 }
-func initOnline() {
-	dbUserName := "root"
-	dbPWD := "Moppo2020!@#"
-	dbIP := "scrm-bus-mysql"
-	dbPort := 34521
-	dbName := "scrm_bus" //practice_questions
-	dbURL := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8&parseTime=True&loc=Local", dbUserName, dbPWD, dbIP, dbPort, dbName)
-	var err error
-	DB, err = gorm.Open(mysql.Open(dbURL), &gorm.Config{
-		NamingStrategy: schema.NamingStrategy{
-			SingularTable: true,
-		},
-	})
-	if err != nil {
-		panic(err)
-	}
-	if DB != nil {
-		fmt.Printf("db != nil\n")
-	}
-}
-
 func initFiveOff() {
 	dbUserName := "root"
 	dbPWD := "123Moppo!@#"
