@@ -22,10 +22,10 @@ var TestFiveDbIP = "192.168.1.5"
 var TestFiveDbPort = 3306
 
 var TestFourDbName = "scrm_bus"
-var TestFourDbPWD = "root"
+var TestFourDbPWD = "mysql2Moppo123#"
 var TestFourDbUserName = "root"
 var TestFourDbIP = "192.168.1.4"
-var TestFourDbPort = 3306
+var TestFourDbPort = 34521
 
 func getProfile(profileType int) string {
 	dbURL := ""
@@ -44,7 +44,7 @@ func getProfile(profileType int) string {
 }
 
 func init() {
-	dbURL := getProfile(1)
+	dbURL := getProfile(2)
 	var err error
 	DB, err = gorm.Open(mysql.Open(dbURL), &gorm.Config{
 		NamingStrategy: schema.NamingStrategy{
