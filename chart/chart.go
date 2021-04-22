@@ -1,4 +1,5 @@
 package chart
+
 import (
 	"fmt"
 	"math/rand"
@@ -28,10 +29,24 @@ func CreateChat() {
 
 	// Put data into instance
 	bar.SetXAxis([]string{"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"}).
-		AddSeries("Category A", generateBarItems()).
 		AddSeries("Category B", generateBarItems())
 	// Where the magic happens
 	f, _ := os.Create("/Users/kubrick/go/src/moppo.com/moppo-webhook-server/bar.html")
+	fmt.Println("create bat.html ok!")
+	bar.Render(f)
+}
+
+func CreateBar(title, desc string, category []string, data []opts.BarData,url string) {
+	bar := charts.NewBar()
+	// set some global options like Title/Legend/ToolTip or anything else
+	bar.SetGlobalOptions(charts.WithTitleOpts(opts.Title{
+		Title:    title,
+		Subtitle: desc,
+	}))
+
+	bar.SetXAxis(category).
+		AddSeries("Category", data)
+	f, _ := os.Create(url)
 	fmt.Println("create bat.html ok!")
 	bar.Render(f)
 }
