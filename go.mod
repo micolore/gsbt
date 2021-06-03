@@ -12,6 +12,7 @@ require (
 	github.com/aliyun/aliyun-oss-go-sdk v2.1.8+incompatible
 	github.com/bsm/sarama-cluster v2.1.15+incompatible // indirect
 	github.com/go-echarts/go-echarts/v2 v2.2.3
+	github.com/go-redis/redis/v8 v8.9.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/levigross/exp-html v0.0.0-20120902181939-8df60c69a8f5 // indirect
 	github.com/olivere/elastic/v7 v7.0.24 // indirect
