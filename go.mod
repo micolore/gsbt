@@ -15,10 +15,14 @@ require (
 	github.com/go-echarts/go-echarts/v2 v2.2.3
 	github.com/go-redis/redis/v8 v8.9.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/google/uuid v1.2.0 // indirect
 	github.com/ledongthuc/pdf v0.0.0-20200323191019-23c5852adbd2 // indirect
 	github.com/levigross/exp-html v0.0.0-20120902181939-8df60c69a8f5 // indirect
 	github.com/olivere/elastic/v7 v7.0.24 // indirect
+	github.com/panjf2000/ants/v2 v2.4.5 // indirect
+	github.com/rsocket/rsocket-go v0.8.4
 	github.com/unidoc/unioffice v1.9.0 // indirect
+	go.uber.org/atomic v1.8.0 // indirect
 	golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba // indirect
 	gorm.io/driver/mysql v1.0.5
 	gorm.io/gorm v1.21.3
