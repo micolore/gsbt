@@ -17,6 +17,7 @@ require (
 	github.com/go-redis/redis/v8 v8.9.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.2.0 // indirect
+	github.com/labstack/echo/v4 v4.5.0
 	github.com/ledongthuc/pdf v0.0.0-20200323191019-23c5852adbd2 // indirect
 	github.com/levigross/exp-html v0.0.0-20120902181939-8df60c69a8f5 // indirect
 	github.com/olivere/elastic/v7 v7.0.24 // indirect
