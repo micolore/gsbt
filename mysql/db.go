@@ -44,7 +44,7 @@ func getProfile(profileType int) string {
 }
 
 func init() {
-	dbURL := getProfile(2)
+	dbURL := getProfile(1)
 	var err error
 	DB, err = gorm.Open(mysql.Open(dbURL), &gorm.Config{
 		NamingStrategy: schema.NamingStrategy{
