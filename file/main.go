@@ -13,24 +13,12 @@ import (
 )
 
 func GenCode() {
-	//read dir  java file out office
-	//content := readSingleFile("/Users/kubrick/Downloads/tjava/mengxuegu-blog/mengxuegu-blog-api/src/main/java/com/mengxuegu/blog/feign/req/UserInfoREQ.java")
-	//content := readSingleFile(path)
-	//fmt.Println(content)
-	//writeFile(content)
-
-	// 1)
-	// path := "/Users/kubrick/Documents/moppo/code/peoject/scrm-2.0/whatsapp-scrm-server/scrm-admin-server-modules/"
-	// path = "/Users/kubrick/Documents/moppo/code/peoject/scrm-2.0/whatsapp-scrm-server/scrm-single-server-modules/"
-	// path = "/Users/kubrick/Documents/moppo/code/peoject/scrm-2.0/whatsapp-scrm-server/scrm-biz-modules/"
-	// path = "/Users/kubrick/Documents/moppo/code/peoject/scrm-2.0/whatsapp-scrm-server/scrm-common-modules/"
-
 	// 2)
-	path := "/Users/kubrick/Documents/moppo/code/peoject/marketing-treasure-server/marketing-treasure-server/marketing-api/"
+	path := "xx/code/peoject/marketing-treasure-server/marketing-treasure-server/marketing-api/"
 	GetAllFile(path)
-	path = "/Users/kubrick/Documents/moppo/code/peoject/marketing-treasure-server/marketing-common-modules/"
+	path = "xx/code/peoject/marketing-treasure-server/marketing-common-modules/"
 	GetAllFile(path)
-	path = "/Users/kubrick/Documents/moppo/code/peoject/marketing-treasure-server/marketing-treasure-server/marketing-manager/"
+	path = "xx/code/peoject/marketing-treasure-server/marketing-treasure-server/marketing-manager/"
 	GetAllFile(path)
 }
 
