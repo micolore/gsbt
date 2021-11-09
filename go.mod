@@ -20,6 +20,7 @@ require (
 	github.com/labstack/echo/v4 v4.5.0
 	github.com/ledongthuc/pdf v0.0.0-20200323191019-23c5852adbd2 // indirect
 	github.com/levigross/exp-html v0.0.0-20120902181939-8df60c69a8f5 // indirect
+	github.com/manifoldco/promptui v0.9.0 // indirect
 	github.com/olivere/elastic/v7 v7.0.24 // indirect
 	github.com/panjf2000/ants/v2 v2.4.5 // indirect
 	github.com/pelletier/go-toml v1.9.4 // indirect
@@ -29,6 +30,7 @@ require (
 	github.com/spf13/viper v1.8.1
 	github.com/unidoc/unioffice v1.9.0 // indirect
 	go.uber.org/atomic v1.8.0 // indirect
+	go.uber.org/zap v1.19.1 // indirect
 	golang.org/x/sys v0.0.0-20210910150752-751e447fb3d0 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba // indirect
