@@ -20,9 +20,9 @@ func SaveReqInfo(reqInfo ReqInfo) {
 	databases.DB.Save(&reqInfo)
 }
 func main() {
-	getAgainData()
+ 	getAgainData()
 }
-
+// 处理nginx 日志
 func getAgainData() {
 	filePath := "/Users/kubrick/Documents/wscrm-bus-api"
 	inputFile, inputError := os.Open(filePath)
