@@ -29,6 +29,7 @@ require (
 	github.com/spf13/cobra v1.2.1
 	github.com/spf13/viper v1.8.1
 	github.com/unidoc/unioffice v1.9.0 // indirect
+	go.etcd.io/etcd/client/v3 v3.5.1 // indirect
 	go.uber.org/atomic v1.8.0 // indirect
 	go.uber.org/zap v1.19.1 // indirect
 	golang.org/x/sys v0.0.0-20210910150752-751e447fb3d0 // indirect
