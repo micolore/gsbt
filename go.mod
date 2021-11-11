@@ -15,6 +15,7 @@ require (
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/go-echarts/go-echarts/v2 v2.2.3
 	github.com/go-redis/redis/v8 v8.9.0 // indirect
+	github.com/go-resty/resty/v2 v2.7.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.2.0 // indirect
 	github.com/labstack/echo/v4 v4.5.0
