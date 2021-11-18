@@ -24,7 +24,7 @@ func main() {
 		HandleError(err)
 	}
 	// 获取存储空间。
-	bucketName := "whatsappscrm"
+	bucketName := "yourbucket"
 	bucket, err := client.Bucket(bucketName)
 	if err != nil {
 		HandleError(err)
@@ -50,13 +50,12 @@ func main() {
 	guids[17] = "53ef46d006eb49859d43bd065b20c4ab"
 	guids[18] = "fb6af7ab1c0d4c59833f415419476f50"
 
-	// http://whatsappscrm.oss-ap-southeast-1.aliyuncs.com/041ccd750b1447b89c8333c0ad6bce3d/image/0003FCB4352A3C0672A7C277F6DD94A4_image
 
 	for i := 0; i < len(guids); i++ {
 		guid := guids[i]
 		// 列举文件。
 		marker := guid + "/image"
-		baseUrl := "http://whatsappscrm.oss-ap-southeast-1.aliyuncs.com/"
+		baseUrl := "http://yourbucket.oss-ap-southeast-1.aliyuncs.com/"
 
 		for {
 			lsRes, err := bucket.ListObjects(oss.Marker(marker))
