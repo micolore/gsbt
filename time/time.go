@@ -8,3 +8,6 @@ func GetNowTime() string {
 func GetNowDate() string {
 	return carbon.Now().ToDateString()
 }
+func AddDay(dateTime string, day int) string {
+	return carbon.Parse(dateTime).AddDays(day).String()
+}
