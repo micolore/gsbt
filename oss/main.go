@@ -50,7 +50,6 @@ func main() {
 	guids[17] = "53ef46d006eb49859d43bd065b20c4ab"
 	guids[18] = "fb6af7ab1c0d4c59833f415419476f50"
 
-
 	for i := 0; i < len(guids); i++ {
 		guid := guids[i]
 		// 列举文件。
