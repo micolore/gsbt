@@ -7,28 +7,25 @@ import (
 )
 
 func main() {
-
 	//delKey()
 	delSingDel()
-
 }
 
 func delSingDel() {
 	var ctx = context.Background()
 
 	rdb := redis.NewClient(&redis.Options{
-		Addr:     "r-d9j7jjde90xhbhzop6.redis.ap-southeast-5.rds.aliyuncs.com:6379",
-		Password: "Fb19Otu2doxHpoa",
+		Addr:     "",
+		Password: "",
 		DB:       0,
 	})
 	fmt.Println(rdb)
-	val := rdb.Get(ctx, "wsn:bus:remainBytes:9")
-	fmt.Println(val)
-	val2 := rdb.Del(ctx, "wsn:bus:remainBytes:9")
+	val2 := rdb.Del(ctx, "key")
 	fmt.Println(val2)
 	fmt.Println("del success!")
 }
-func delKey() {
+
+func delClusterKey() {
 	var ctx = context.Background()
 
 	rdb := redis.NewClusterClient(&redis.ClusterOptions{
