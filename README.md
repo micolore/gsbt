@@ -19,3 +19,13 @@
 * struct-map-json
 
 * web server
+
+* cli
+
+* pdf
+
+* chart
+
+* log
+
+* config
