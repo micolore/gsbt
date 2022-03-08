@@ -9,10 +9,12 @@ require (
 	github.com/CodyGuo/dingtalk v0.0.3 // indirect
 	github.com/CodyGuo/glog v1.0.6 // indirect
 	github.com/JalfResi/justext v0.0.0-20170829062021-c0282dea7198 // indirect
+	github.com/RoaringBitmap/roaring v0.9.4 // indirect
 	github.com/Shopify/sarama v1.28.0
 	github.com/advancedlogic/GoOse v0.0.0-20200830213114-1225d531e0ad // indirect
 	github.com/aliyun/aliyun-oss-go-sdk v2.1.8+incompatible
 	github.com/apache/rocketmq-client-go/v2 v2.1.0
+	github.com/bits-and-blooms/bitset v1.2.1 // indirect
 	github.com/bsm/sarama-cluster v2.1.15+incompatible // indirect
 	github.com/dcu/pdf v0.0.0-20190612170416-c8b299d05f89
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
