@@ -5,7 +5,7 @@ go 1.15
 require (
 	code.sajari.com/docconv v1.1.0 // indirect
 	github.com/ClickHouse/clickhouse-go v1.5.2 // indirect
-	github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.5 // indirect
+	github.com/ClickHouse/clickhouse-go/v2 v2.0.0-beta.5
 	github.com/CodyGuo/dingtalk v0.0.3 // indirect
 	github.com/CodyGuo/glog v1.0.6 // indirect
 	github.com/JalfResi/justext v0.0.0-20170829062021-c0282dea7198 // indirect
@@ -22,6 +22,7 @@ require (
 	github.com/golang-module/carbon v1.5.5
 	github.com/golang/mock v1.6.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/google/gopacket v1.1.19
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/labstack/echo/v4 v4.5.0
 	github.com/ledongthuc/pdf v0.0.0-20200323191019-23c5852adbd2 // indirect

@@ -9,7 +9,7 @@
 * go test -v --count=1 . //禁用缓存
 * GOCACHE=off
 ## other
-
+d
 mode  
 Local directory mode  
 Package list mode  
