@@ -6,12 +6,14 @@ import (
 	"sync"
 	"time"
 )
+
 // channel生产者
 func ChannelProducer(logChan chan InsertLog, log InsertLog, wait *sync.WaitGroup) {
 	logChan <- log
 	fmt.Println("product data：", log)
 	wait.Done()
 }
+
 // channel消费者
 func ChannelConsumer(logChan chan InsertLog, wait *sync.WaitGroup) {
 	log := <-logChan
@@ -24,6 +26,8 @@ func main() {
 	var wg sync.WaitGroup
 	logChan := make(chan InsertLog, 100)
 
+	dbLog := InsertLog{}
+	databases.DB.Where(InsertLog{Id: 22}).First(&dbLog)
 	for i := 0; i < 10; i++ {
 		fmt.Printf("Producer %d\n", i)
 		il := InsertLog{
@@ -43,7 +47,7 @@ func main() {
 	wg.Wait()
 }
 
-// InsertLog
+// InsertLog s
 type InsertLog struct {
 	Id          int       `json:"id" gorm:"column:id;type:bigint;primary_key"`
 	Type        int       `json:"type" gorm:"column:type;type:bigint;"`                              //类型

@@ -1,12 +1,14 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"github.com/dcu/pdf"
 )
 
 func main() {
-	content, err := ReadPdf("/Users/kubrick/Documents/org/moppo-kubrick-doc/030-project/lopdeals/斗篷/归档/инструкции.pdf") // Read local pdf file
+	//content, err := ReadPdf("/Users/kubrick/Documents/org/moppo-kubrick-doc/030-project/lopdeals/斗篷/归档/инструкции.pdf") // Read local pdf file
+	content, err := readPdf("/Users/kubrick/Documents/tiktok.pdf") // Read local pdf file
 	if err != nil {
 		panic(err)
 	}
@@ -41,4 +43,19 @@ func ReadPdf(path string) (string, error) {
 		}
 	}
 	return "", nil
+}
+func readPdf(path string) (string, error) {
+	f, r, err := pdf.Open(path)
+	// remember close file
+	defer f.Close()
+	if err != nil {
+		return "", err
+	}
+	var buf bytes.Buffer
+	b, err := r.GetPlainText()
+	if err != nil {
+		return "", err
+	}
+	buf.ReadFrom(b)
+	return buf.String(), nil
 }
