@@ -1,2 +1,18 @@
 * oss
 ** aliyun
+
+*** ossutil 使用
+
+https://help.aliyun.com/document_detail/179388.html?spm=a2c4g.11186623.0.0.4719208eo0wcZo
+
+ossutil cp s.all.to.4.7.7-ppd.wyu oss://static-res/client/ -c ppd-oss
+
+ossutil cp s-v4.7.7-PPD-Setup.exe oss://static-res/installer/ -c ppd-oss
+
+ppd-oss 配置文件内容如下
+
+[Credentials]
+language=CH
+endpoint=
+accessKeyID=
+accessKeySecret=
