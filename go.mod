@@ -27,6 +27,7 @@ require (
 	github.com/panjf2000/ants/v2 v2.5.0
 	github.com/rogpeppe/go-internal v1.8.0 // indirect
 	github.com/rsocket/rsocket-go v0.8.4
+	github.com/sashabaranov/go-gpt3 v1.3.1 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/viper v1.8.1 // indirect
