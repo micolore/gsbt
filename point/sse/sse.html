@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sse test</title>
+</head>
+<script>
+    // https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events#event_stream_format
+    const eventSource = new EventSource("http://localhost:3000/sse");
+
+    eventSource.onmessage = function(event) {
+        console.log("Received event:", event.data);
+    };
+
+</script>
+<body>
+ hello sse!
+</body>
+</html>

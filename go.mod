@@ -15,7 +15,6 @@ require (
 	github.com/dcu/pdf v0.0.0-20190612170416-c8b299d05f89
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/go-echarts/go-echarts/v2 v2.2.3
-	github.com/go-redis/redis/v8 v8.9.0
 	github.com/golang-module/carbon v1.5.5
 	github.com/golang/mock v1.6.0 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
@@ -25,6 +24,7 @@ require (
 	github.com/manifoldco/promptui v0.9.0
 	github.com/olivere/elastic/v7 v7.0.24
 	github.com/panjf2000/ants/v2 v2.5.0
+	github.com/redis/go-redis/v9 v9.0.2 // indirect
 	github.com/rogpeppe/go-internal v1.8.0 // indirect
 	github.com/rsocket/rsocket-go v0.8.4
 	github.com/sashabaranov/go-gpt3 v1.3.1 // indirect
